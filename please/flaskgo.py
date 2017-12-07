@@ -9,7 +9,7 @@ def form():
 @app.route('/login',methods=['POST'])
 def login():
     if  request.method == 'POST':
-        if  (request.form['username'] == 'jamie'
+        if  (request.form['username'] == 'sanghyung'
              and    request.form['password'] == '1234'):
             session['logged_in'] = True
             session['username'] = request.form['username']
